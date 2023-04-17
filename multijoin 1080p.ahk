@@ -32,24 +32,24 @@ GetNumber(x)
 ;创建游戏，需要有原来游戏设置，并且末位更新，0-9循环
 CreateGame(num)
 {
-	Click Random(1400,1550),Random(170,180)
+	Click Random(1400,1550),Random(170,180)  ;1920*1080 建游戏名称输入框的坐标范围
 	Sleep ClickDelay()
 	Send "{Backspace}"
 	Sleep ClickDelay()
 	Send num
 	Sleep ClickDelay()
-	Click Random(1420,1525),Random(655,680)
+	Click Random(1420,1525),Random(655,680) ;1920*1080 创建游戏按钮的坐标范围
 }
 ;加入游戏
 JoinGame(num)
 {
-	Click Random(1300,1430),Random(145,155)
+	Click Random(1300,1430),Random(145,155) ;1920*1080 加入游戏名称输入框的坐标范围
 	Sleep ClickDelay()
 	Send "{Backspace}"
 	Sleep ClickDelay()
 	Send num
 	Sleep ClickDelay()
-	Click Random(1425,1510),Random(660,685)
+	Click Random(1425,1510),Random(660,685) ;1920*1080加入游戏按钮的坐标范围
 }
 
 ;退出游戏
@@ -57,7 +57,7 @@ ExitGame()
 {
    	Send "{Esc}"
 	Sleep QuitDelay()
-	Click Random(900,1010),Random(460,485)  ;储存并离开游戏按钮的鼠标点击范围
+	Click Random(900,1010),Random(460,485)  ;1920*1080储存并离开游戏按钮的鼠标点击范围
 }
 
 
