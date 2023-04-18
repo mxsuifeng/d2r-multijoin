@@ -1,3 +1,5 @@
+usage of 3rd party tools is at your own risk
+
 多开玩家快速退游戏和加游戏
 
 使用说明：
